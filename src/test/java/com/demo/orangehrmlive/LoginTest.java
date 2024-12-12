@@ -15,7 +15,7 @@ public class LoginTest {
     private LoginPage loginPage;
     private String loginURL = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
 
-    @BeforeClass
+    @BeforeMethod
     public void setUp() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -43,7 +43,19 @@ public class LoginTest {
                 getAssertionNotEqualsMessage(actualHeaderText, expectedHeaderText));
     }
 
-    @AfterClass
+    @Test
+    // Separate class for just testing the login function
+    public void testFailedLoginFunction() {
+        loginPage.loginToApplication("Admin", "admin1234");
+
+        String actualErrorText = loginPage.getLoginErrorMessage();
+        String expectedErrorText = "Invalid credentials";
+
+        Assert.assertEquals(actualErrorText, expectedErrorText,
+                getAssertionNotEqualsMessage(actualErrorText, expectedErrorText));
+    }
+
+    @AfterMethod
     public void tearDown() throws InterruptedException {
         driver.quit();
     }
