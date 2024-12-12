@@ -1,5 +1,6 @@
 package base;
 
+import com.demo.orangehrmlive.DashboardPage;
 import com.demo.orangehrmlive.LoginPage;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -23,6 +24,7 @@ public class BaseTest {
     private WebDriver driver;
     protected BasePage basePage;
     protected LoginPage loginPage;
+    protected DashboardPage dashboardPage;
     private final String orangeHrmURL = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
     private final String usernameCredentials = "Admin";
     private final String passwordCredentials = "admin123";
@@ -46,7 +48,8 @@ public class BaseTest {
 
         // Set the page on homepage
         loginPage = new LoginPage();
-        loginPage.loginToApplication(usernameCredentials, passwordCredentials);
+        dashboardPage = new DashboardPage();
+        dashboardPage = loginPage.loginToApplication(usernameCredentials, passwordCredentials);
     }
 
     @AfterMethod
