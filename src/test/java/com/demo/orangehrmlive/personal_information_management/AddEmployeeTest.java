@@ -16,7 +16,7 @@ public class AddEmployeeTest extends BaseTest {
         String lastName = "Dela Cruz";
         var addEmployeePage = dashboardPage.goToPersonalInformation().clickAddEmployeeButton();
 
-        // After adding an employee, the page is directed to the employee page
+        // After adding an employee, the page is directed to the employee page.
         var employeePage = addEmployeePage.addEmployee(firstName, middleName, lastName);
 
         String actualName = employeePage.getExpectedName();
