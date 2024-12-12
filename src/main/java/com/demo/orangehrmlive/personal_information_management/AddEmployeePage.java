@@ -27,7 +27,7 @@ public class AddEmployeePage extends PersonalInformationPage {
     }
 
     public EmployeePage addEmployee(String firstName, String middleName, String lastName) {
-        explicitWaitUntilVisible(5, firstNameField); // Just to make sure the first element is loaded in the page
+        explicitWaitUntilVisible(10, firstNameField); // Just to make sure the first element is loaded in the page
         setFirstName(firstName);
         setMiddleName(middleName);
         setLastName(lastName);

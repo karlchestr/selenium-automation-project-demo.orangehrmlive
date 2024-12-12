@@ -1,0 +1,8 @@
+<suite name="demo.orangehrmlive Test Suite 1.0">
+    <test name="Functional Tests">
+        <classes>
+            <class name="com.demo.orangehrmlive.LoginTest"/>
+            <class name="com.demo.orangehrmlive.personal_information_management.AddEmployeeTest"/>
+        </classes>
+    </test>
+</suite>
