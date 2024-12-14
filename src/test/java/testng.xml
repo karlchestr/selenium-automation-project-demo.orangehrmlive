@@ -2,7 +2,9 @@
     <test name="Functional Tests">
         <classes>
             <class name="com.demo.orangehrmlive.LoginTest"/>
+            <class name="com.demo.orangehrmlive.LogoutTest"/>
             <class name="com.demo.orangehrmlive.personal_information_management.AddEmployeeTest"/>
+            <class name="com.demo.orangehrmlive.personal_information_management.EditEmployeeTest"/>
         </classes>
     </test>
 </suite>

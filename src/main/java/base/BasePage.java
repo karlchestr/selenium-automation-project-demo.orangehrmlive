@@ -25,4 +25,8 @@ public class BasePage {
     protected void click(By locator) {
         find(locator).click();
     }
+
+    protected void refresh() {
+        driver.navigate().refresh();
+    }
 }

@@ -19,4 +19,10 @@ public class WaitUtility extends Utility {
         WebElement element = driver.findElement(locator);
         wait.until(d -> !d.findElement(locator).getText().isEmpty());
     }
+
+    public static void explicitWaitUntilClickable(int seconds, By locator) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
+        WebElement element = driver.findElement(locator);
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+    }
 }

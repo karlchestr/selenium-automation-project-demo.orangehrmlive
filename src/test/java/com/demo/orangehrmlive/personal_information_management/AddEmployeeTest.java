@@ -14,10 +14,11 @@ public class AddEmployeeTest extends BaseTest {
         String firstName = "Juan";
         String middleName = "Luna";
         String lastName = "Dela Cruz";
+        String id = "Juan101901";
         var addEmployeePage = dashboardPage.goToPersonalInformation().clickAddEmployeeButton();
 
         // After adding an employee, the page is directed to the employee page.
-        var employeePage = addEmployeePage.addEmployee(firstName, middleName, lastName);
+        var employeePage = addEmployeePage.addEmployee(firstName, middleName, lastName, id);
 
         String actualName = employeePage.getExpectedName();
         String expectedName = "Juan Dela Cruz";

@@ -25,7 +25,7 @@ public class BaseTest {
     protected BasePage basePage;
     protected LoginPage loginPage;
     protected DashboardPage dashboardPage;
-    private final String orangeHrmURL = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
+    protected final String orangeHrmURL = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
     private final String usernameCredentials = "Admin";
     private final String passwordCredentials = "admin123";
 

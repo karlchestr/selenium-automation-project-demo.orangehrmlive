@@ -21,4 +21,11 @@ public class JavaScriptUtility extends Utility {
         JavascriptExecutor executor = (JavascriptExecutor) driver;
         executor.executeScript("arguments[0].click();", element);
     }
+
+    public static void sendKeysJS(String key, By locator) {
+        WebElement element = driver.findElement(locator);
+
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        executor.executeScript("arguments[0].setAttribute('value', '" + key +"')", element);
+    }
 }

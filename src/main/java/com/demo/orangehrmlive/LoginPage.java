@@ -28,4 +28,8 @@ public class LoginPage extends BasePage {
         explicitWaitUntilTextVisible(5, errorMessageField);
         return getText(errorMessageField);
     }
+
+    public String getCurrentUrl() {
+        return driver.getCurrentUrl();
+    }
 }
