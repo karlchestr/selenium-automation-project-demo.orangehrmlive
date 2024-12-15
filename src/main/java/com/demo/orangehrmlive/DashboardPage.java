@@ -1,6 +1,7 @@
 package com.demo.orangehrmlive;
 
 import base.BasePage;
+import com.demo.orangehrmlive.personal_information_management.AdminPage;
 import com.demo.orangehrmlive.personal_information_management.PersonalInformationPage;
 import org.openqa.selenium.By;
 
@@ -12,6 +13,7 @@ public class DashboardPage extends BasePage {
     private By pimItem = By.xpath("//div[@id='app']//span[text()='PIM']");
     private By userDropdown = By.xpath("//div[@id='app']//span[@class='oxd-userdropdown-tab']");
     private By logoutButton = By.xpath("//div[@id='app']//ul[@class='oxd-dropdown-menu']//a[text()='Logout']");
+    private By adminItem = By.xpath("//div[@id='app']//span[text()='Admin']");
 
     public String getDashboardHeader() {
         explicitWaitUntilVisible(5, dashBoardHeader);
@@ -33,5 +35,11 @@ public class DashboardPage extends BasePage {
         explicitWaitUntilVisible(3, logoutButton);
         click(logoutButton);
         return new LoginPage();
+    }
+
+    public AdminPage goToAdmin() {
+        explicitWaitUntilVisible(3, adminItem);
+        click(adminItem);
+        return new AdminPage();
     }
 }
