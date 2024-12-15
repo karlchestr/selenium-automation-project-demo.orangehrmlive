@@ -4,7 +4,10 @@
             <class name="com.demo.orangehrmlive.LoginTest"/>
             <class name="com.demo.orangehrmlive.LogoutTest"/>
             <class name="com.demo.orangehrmlive.personal_information_management.AddEmployeeTest"/>
+            <class name="com.demo.orangehrmlive.personal_information_management.AddUserAdminTest"/>
             <class name="com.demo.orangehrmlive.personal_information_management.EditEmployeeTest"/>
+            <class name="com.demo.orangehrmlive.personal_information_management.DeleteUserAdminTest"/>
+            <class name="com.demo.orangehrmlive.personal_information_management.DeleteEmployeeTest"/>
         </classes>
     </test>
 </suite>
