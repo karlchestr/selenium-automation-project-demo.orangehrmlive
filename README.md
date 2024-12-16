@@ -7,12 +7,11 @@
   
   This automation framework handles **Employee Information Management**, including **adding, editing, and deleting employee records**. 
   It also supports **adding and removing Admin users**. Additionally, it includes tests for **login and logout functionalities**.
+  > **Tech Stack used:** IntelliJ IDEA Community Edition, Selenium WebDriver 4.23.0, Java 21, TestNG 7.10.2 and GitHub
 
   ![image](https://github.com/user-attachments/assets/a49d2491-9fc5-4960-8df5-bd9f33f403c6)
   ![image](https://github.com/user-attachments/assets/28955411-7ddb-4222-b45c-8be7143b136d)
   
-  > **Tech Stack used:** IntelliJ IDEA Community Edition, Selenium WebDriver 4.23.0, Java 21, TestNG 7.10.2 and GitHub
-   
 ### Getting Started
 
   These instructions will give you a copy of the project up and running on
